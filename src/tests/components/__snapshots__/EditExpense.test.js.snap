@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should handle editExpense 1`] = `
+<div>
+  <ExpenseForm
+    expense={
+      Object {
+        "amount": 109500,
+        "createdAt": -345600000,
+        "description": "Rent",
+        "id": "2",
+        "note": "",
+      }
+    }
+    onSubmit={[Function]}
+  />
+  <button
+    onClick={[Function]}
+  >
+    Remove Expense
+  </button>
+</div>
+`;
+
+exports[`Should handle editExpense 2`] = `
+<div>
+  <ExpenseForm
+    expense={
+      Object {
+        "amount": 109500,
+        "createdAt": -345600000,
+        "description": "Rent",
+        "id": "2",
+        "note": "",
+      }
+    }
+    onSubmit={[Function]}
+  />
+  <button
+    onClick={[Function]}
+  >
+    Remove Expense
+  </button>
+</div>
+`;
+
+exports[`Should handle removeExpense 1`] = `
+<div>
+  <ExpenseForm
+    expense={
+      Object {
+        "amount": 109500,
+        "createdAt": -345600000,
+        "description": "Rent",
+        "id": "2",
+        "note": "",
+      }
+    }
+    onSubmit={[Function]}
+  />
+  <button
+    onClick={[Function]}
+  >
+    Remove Expense
+  </button>
+</div>
+`;
+
+exports[`Should handle removeExpense 2`] = `
+<div>
+  <ExpenseForm
+    expense={
+      Object {
+        "amount": 109500,
+        "createdAt": -345600000,
+        "description": "Rent",
+        "id": "2",
+        "note": "",
+      }
+    }
+    onSubmit={[Function]}
+  />
+  <button
+    onClick={[Function]}
+  >
+    Remove Expense
+  </button>
+</div>
+`;
+
+exports[`Should render EditExpensePage correctly 1`] = `
+<div>
+  <ExpenseForm
+    expense={
+      Object {
+        "amount": 109500,
+        "createdAt": -345600000,
+        "description": "Rent",
+        "id": "2",
+        "note": "",
+      }
+    }
+    onSubmit={[Function]}
+  />
+  <button
+    onClick={[Function]}
+  >
+    Remove Expense
+  </button>
+</div>
+`;
