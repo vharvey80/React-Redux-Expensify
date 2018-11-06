@@ -22,6 +22,12 @@ git log     -   View recent commits
         - heroku open
         - heroku logs
 
+- NumeralJS: http://numeraljs.com
+
 # Ideas
 
 MongoDB, GraphQL, Node.js API, etc.
+
+# New Feature Workflow (End to End)
+
+1 - 
