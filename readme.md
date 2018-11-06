@@ -12,6 +12,14 @@ git log     -   View recent commits
     - Extract Text : https://www.npmjs.com/package/extract-text-webpack-plugin
     - CSS-Loader: https://github.com/webpack-contrib/css-loader
 
+- ExpressJS:
+    - v4: http://expressjs.com/en/4x/api.html
+
+- Heroku: https://heroku.com
+    - CLI: https://devcenter.heroku.com/articles/heroku-cli
+        - heroku login
+        - heroku create <app-name>
+
 # Ideas
 
 MongoDB, GraphQL, Node.js API, etc.
