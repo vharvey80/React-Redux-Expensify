@@ -8,7 +8,7 @@ git log     -   View recent commits
 
 # Pluggins and Packages
 
-- Webpack Plugin(s):
+- Webpack Plugin(s): https://webpack.js.org/
     - Extract Text : https://www.npmjs.com/package/extract-text-webpack-plugin
     - CSS-Loader: https://github.com/webpack-contrib/css-loader
 
@@ -19,6 +19,8 @@ git log     -   View recent commits
     - CLI: https://devcenter.heroku.com/articles/heroku-cli
         - heroku login
         - heroku create <app-name>
+        - heroku open
+        - heroku logs
 
 # Ideas
 
