@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import ExpenseListItem from './ExpenseListItem';
+
 import filterExpenses from '../helpers/expenses.helper';
 
 export const ExpenseList = ({ expenses }) => (
@@ -9,7 +10,9 @@ export const ExpenseList = ({ expenses }) => (
         {
             expenses.length === 0
                 ? <p>No expenses</p>
-                : expenses.map((expense, index) => <ExpenseListItem key={expense.id} {...expense} />)
+                : <div>
+                    {expenses.map((expense, index) => <ExpenseListItem key={expense.id} {...expense} />)}
+                  </div>
         }
     </div>
 );
