@@ -1,36 +1,19 @@
 import * as firebase from 'firebase';
 
 // https://expensifyapp-61e47.firebaseio.com/
+// https://firebase.google.com/docs/
 
 const config = {
-    apiKey: "AIzaSyBkrx5wIET7fBp96Z5l2UPzqNa-lFHyZe4",
-    authDomain: "expensifyapp-61e47.firebaseapp.com",
-    databaseURL: "https://expensifyapp-61e47.firebaseio.com",
-    projectId: "expensifyapp-61e47",
-    storageBucket: "expensifyapp-61e47.appspot.com",
-    messagingSenderId: "190460354180"
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.FIREBASE_DATABASE_URL,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
 };
 
 firebase.initializeApp(config);
 
 const db = firebase.database();
 
-db.ref().set({
-    name: 'Vincent Harvey',
-    age: 23,
-    isSingle: true,
-    location: {
-        city: 'Gatineau',
-        province: 'Ontario',
-        country: 'Canada'
-    }
-});
-
-db.ref('age').set(28);
-
-db.ref('location/city').set('Ottawa');
-
-db.ref('attributes').set({
-    height: 180,
-    weight: 170
-});
+export { firebase, db as default }; 
