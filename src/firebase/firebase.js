@@ -1,7 +1,9 @@
-import * as firebase from 'firebase/';
+import * as firebase from 'firebase';
 
 // https://expensifyapp-61e47.firebaseio.com/
 // https://firebase.google.com/docs/
+
+// Auth : https://firebase.google.com/docs/reference/js/
 
 const config = {
     apiKey: process.env.FIREBASE_API_KEY,
@@ -15,5 +17,6 @@ const config = {
 firebase.initializeApp(config);
 
 const db = firebase.database();
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, db as default }; 
+export { firebase, db as default, googleAuthProvider }; 
