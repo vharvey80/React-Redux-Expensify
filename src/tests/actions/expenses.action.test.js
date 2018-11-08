@@ -26,6 +26,8 @@ beforeEach((done) => {
     });
 
     db.ref('expenses').set(expensesData).then(() => done());
+
+    jest.setTimeout(30000);
 });
 
 test('Should setup REMOVE_EXPENSE action object.', () => {
@@ -35,8 +37,6 @@ test('Should setup REMOVE_EXPENSE action object.', () => {
         type: 'REMOVE_EXPENSE',
         id: '123abc'
     });
-
-    jest.setTimeout(300000);
 });
 
 test('Should remove the expenses from FIREBASE', (done) => {
@@ -99,11 +99,11 @@ test('Should edit the expenses from FIREBASE', (done) => {
         });
 
         return db.ref(`expenses/${id}`).once('value');
+
     }).then((snapshot) => {
         expect(snapshot.val()).toEqual(updates);
         done();
     });
-
 });
 
 test('Should setup ADD_EXPENSE action object.', () => {

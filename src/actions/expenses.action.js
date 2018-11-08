@@ -23,7 +23,7 @@ export const startAddExpense = (expenseData = {}) => {
                 dispatch(addExpense({
                     id: ref.key,
                     ...expense
-                }))
+                }));
             });
 
     };
@@ -54,9 +54,7 @@ export const editExpense = (id, updates) => ({
 
 export const startEditExpense = (id, updates) => {
     return (dispatch) => {
-        return db.ref(`expenses/${id}`).update({
-            ...updates
-        })
+        return db.ref(`expenses/${id}`).update(updates)
         .then(() => {
             dispatch(editExpense(id, updates));
         })
