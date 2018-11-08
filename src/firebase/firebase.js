@@ -1,4 +1,4 @@
-import * as firebase from 'firebase';
+import * as firebase from 'firebase/';
 
 // https://expensifyapp-61e47.firebaseio.com/
 // https://firebase.google.com/docs/
