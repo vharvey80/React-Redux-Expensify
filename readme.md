@@ -52,7 +52,7 @@ MongoDB, GraphQL, Node.js API, etc.
 
 # New Feature Workflow (End to End)
 
-    1 - Launch devServer + Jest Test Suite.
-    2 - Add the new feature.
-    3 - Test everything.
-    4 - Push to master and to heroku.
+    1 - Launch devServer + Jest Test Suite.  
+    2 - Add the new feature.  
+    3 - Test everything.  
+    4 - Push to master and to heroku.  
