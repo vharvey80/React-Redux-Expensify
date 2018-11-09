@@ -8,6 +8,8 @@ import { startSetExpenses } from './actions/expenses.action';
 import { login, logout } from './actions/auth.action';
 import { history } from './helpers/history.helper';
 
+import LoadingPage from './components/LoadingPage';
+
 import { firebase } from './firebase/firebase';
 
 import 'normalize.css/normalize.css';
@@ -18,7 +20,7 @@ const store = configureStore();
 
 const app = (
     <Provider store={store}>
-        <AppRouter />    
+        <AppRouter />
     </Provider>
 );
 
@@ -31,7 +33,7 @@ const renderApp = () => {
     }
 };
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
