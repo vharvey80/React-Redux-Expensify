@@ -39,14 +39,14 @@ MongoDB, GraphQL, Node.js API, etc.
 
 - Expensify App
 
-    1 - Add confirmation modal when removing an expense.
-    2 - Show number of hidden expenses in /dashboard summary.
-    3 - Add support for another social login system.
-    4 - Buy a custom domain and configure it with heroku (or use subdomain on domain you own).
+    1 - Add confirmation modal when removing an expense.  
+    2 - Show number of hidden expenses in /dashboard summary.  
+    3 - Add support for another social login system.  
+    4 - Buy a custom domain and configure it with heroku (or use subdomain on domain you own).  
 
 - Indecision App
 
-    1 - Deploying it.
+    1 - Deploying it.  
 
 - Blogify {...}
 
