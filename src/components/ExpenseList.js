@@ -6,14 +6,23 @@ import ExpenseListItem from './ExpenseListItem';
 import filterExpenses from '../helpers/expenses.helper';
 
 export const ExpenseList = ({ expenses }) => (
-    <div>
-        {
-            expenses.length === 0
-                ? <p>No expenses</p>
-                : <div>
-                    {expenses.map((expense, index) => <ExpenseListItem key={expense.id} {...expense} />)}
-                  </div>
-        }
+    <div className="content-container">
+        <div className="list-header">
+            <div className="show-for-mobile">Expenses</div>
+            <div className="show-for-desktop">Expense</div>
+            <div className="show-for-desktop">Amount</div>
+        </div>
+        <div className="list-body">
+            {
+                expenses.length === 0
+                    ? <div className="list-item list-item--message">
+                        <span>No expenses were found for you.</span>
+                    </div>
+                    : <div>
+                        {expenses.map((expense, index) => <ExpenseListItem key={expense.id} {...expense} />)}
+                    </div>
+            }        
+        </div>
     </div>
 );
 
